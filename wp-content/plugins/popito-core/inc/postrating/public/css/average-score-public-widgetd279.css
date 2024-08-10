@@ -1,0 +1,62 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ .fers--rating-widget-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 5px 15px;
+}
+.fers--rating-widget-wrap {
+    border: 1px solid #eee;
+}
+.fers--rating-widget-title {
+    font-size: 22px;
+}
+.fers--rating-widget-score {
+    font-size: 24px;
+}
+.fers--rating-widget-wrap .fers--rating-categories {
+    padding: 15px;
+    margin-bottom: 0;
+}
+.fers--rating-widget-wrap .fers--product-img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.fers--rating-widget-wrap span.fers--rating-bar {
+    padding: 4px;
+    border-radius: 4px;
+}
+.fers--rating-widget-wrap .fers--pros-cons-wrap {
+    flex-direction: column;
+    padding: 20px;
+}
+.fers--rating-widget-wrap ul.fers--pros-list li {
+    font-size: 16px;
+}
+.fers--rating-widget-wrap ul.fers--pros-list span.icon-checkmark:before {
+    font-size: 8px;
+}
+.fers--rating-widget-wrap ul.fers--cons-list span.icon-cross:before {
+    font-size: 13px;
+}
+.fers--rating-widget-wrap .fers--pros-wrap {
+    margin-bottom: 20px;
+}
+.fers--rating-widget-wrap .fers--product-link {
+    display: block;
+    text-align: center;
+    margin: 14px;
+    font-size: 17px;
+}
+@media (max-width: 992px) {
+    #fers_editorial_rating_widget {
+        display: none;
+    }
+}

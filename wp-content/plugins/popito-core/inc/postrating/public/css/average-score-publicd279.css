@@ -1,0 +1,249 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.fers--wrap{
+	clear: both;
+	margin-bottom: 70px;
+}
+.fers--rating-wrap {
+    clear: both;
+	margin-bottom: 70px;
+}
+.fers--pros-title,
+.fers--cons-title,
+.fers--rating-title{
+	font-size: 18px;
+	letter-spacing: .25px;
+	font-family: var(--hff);
+	margin: 0;
+	padding: 0;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+}
+.fers--rating-box{
+	border: 4px solid #000;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.fers--rating-box-top{
+	display: flex;
+}
+.fers--overall-score-box{
+	padding: 10px;
+	width: 176px;
+	min-width: 176px;
+	background-color: #000;
+	text-align: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+.fers--overall-score{
+	font-size: 36px;
+	font-weight: 900;
+	color: #fff;
+	font-style: italic;
+	line-height: 1;
+	font-family: var(--hff);
+	margin-bottom: 7px;
+}
+.fers--rating-text{
+	font-size: 14px;
+	font-weight: 900;
+	color: #fff;
+	text-transform: uppercase;
+	display: block;
+	clear: both;
+	font-family: var(--hff);
+}
+
+.fers--rating-categories{
+	padding: 30px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.fers--rating-meter {
+    background: #bbbbbb;
+}
+.fers--rating-bar {
+    background: #ffd800;
+    display: block;
+	height: 4px;
+}
+.fers--rating-detail {
+    display: flex;
+    justify-content: space-between;
+}
+.fers--rating-name{
+	font-size: 14px;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-family: var(--hff);
+	line-height: 20px;
+}
+.fers--rating-rate{
+	font-size: 16px;
+	font-weight: 900;
+	font-style: italic;
+	font-family: var(--hff);
+	line-height: 20px;
+}
+.fers--rating-categories .fers--rating-meter:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.fers--rating-box-bottom{
+	padding: 32px 30px 30px 30px;
+	width: 100%;
+	box-sizing: border-box;
+	border-top: 4px solid #000;
+	background-color: #ffd800;
+}
+.fers-score-overview-title{
+	font-size: 18px;
+	margin: 0;
+	font-family: var(--hff);
+	font-weight: 600;
+	margin-bottom: 6px;
+	display: block;
+}
+.fers-score-overview{
+	font-size: 18px;
+	line-height: 26px;
+}
+.fers-score-overview p{
+	margin: 0;
+	padding: 0;
+}
+
+/* Pros-Cons */
+.fers--title-wrap{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.fers--pros-title{
+	width: 50%;
+	padding-right: 20px;
+}
+.fers--cons-title{
+	width: 50%;
+}
+.fers--boxes {
+    display: flex;
+    justify-content: space-between;
+	border: 4px solid #000;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.fers--pros-box,
+.fers--cons-box{
+	position: relative;
+	width: 50%;
+	padding: 40px 26px 37px;
+}
+.fers--pros-box{
+	border-right: 2px solid #000;
+	background-color: #f1fff1;
+}
+.fers--cons-box{
+	background-color: #fff1f1;
+	border-left: 2px solid #000;
+}
+.fers--icon-wrap{
+	position: absolute;
+	right: 50px;
+	top: 0px;
+	width: 50px;
+	height: 30px;
+	border-radius: 0 0 5px 5px;
+	background-color: #000;
+}
+.fers--icon-wrap .fn__svg{
+	color: #fff;
+	width: 16px;
+	height: 16px;
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	margin-left: -8px;
+}
+ul.fers--pros-list,
+ul.fers--cons-list {
+    margin: 0;
+    padding: 0;
+	list-style-type: none;
+}
+ul.fers--pros-list li,
+ul.fers--cons-list li {
+    font-size: 18px;
+	font-family: var(--bff);
+	font-weight: 600;
+	margin: 0;
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 11px;
+}
+ul.fers--cons-list li:last-child,
+ul.fers--pros-list li:last-child{
+	margin-bottom: 0;
+}
+ul.fers--cons-list li:after,
+ul.fers--pros-list li:after{
+	width: 20px;
+	height: 2px;
+	background-color: #000;
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 10px;
+}
+@media(max-width: 768px){
+	.fers--rating-box-top{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.fers--overall-score-box{
+		width: 100%;
+		min-width: 100%;
+		padding: 30px;
+		min-height: 150px;
+	}
+	.fers--boxes{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.fers--pros-box{
+		border-right: none;
+		border-bottom: 2px solid #000;
+	}
+	.fers--cons-box{
+		border-left: none;
+		border-top: 2px solid #000;
+	}
+	.fers--pros-box, .fers--cons-box{
+		width: 100%;
+	}
+}
